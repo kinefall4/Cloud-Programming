@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kine Fall – AWS Static Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f4f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    h1, h2 {
+      color: #007acc;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007acc;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      background-color: #e2e2e2;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      max-width: 800px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Kine Fall – Static Website on AWS</h1>
+</header>
+
+<main>
+  <div class="card">
+    <h2>About This Project</h2>
+    <p>This static website was deployed using Amazon S3 and Terraform as part of the Cloud Programming course portfolio. It demonstrates how to build, configure, and publish a globally accessible website using Infrastructure as Code (IaC).</p>
+
+    <p>The infrastructure was automated with Terraform, making it reproducible and scalable. Public access was carefully configured using bucket policies and website hosting settings.</p>
+
+    <h2>Click the Button</h2>
+    <button onclick="alert('Thanks for visiting my project!')">Click Me</button>
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 Kine Fall. Hosted on AWS S3 using Terraform.
+</footer>
+
+</body>
+</html>
